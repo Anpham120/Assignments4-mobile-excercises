@@ -1,0 +1,55 @@
+import type { en } from './en';
+
+// Bản dịch tiếng Việt; kiểu typeof en bắt buộc phải đủ khóa như bản tiếng Anh
+export const vi: typeof en = {
+  appName: 'Quản lý SV',
+  list: {
+    count: { one: '%{count} sinh viên', other: '%{count} sinh viên' },
+    add: 'Thêm sinh viên',
+    edit: 'Sửa thông tin %{name}',
+    delete: 'Xóa %{name}',
+    emptyTitle: 'Chưa có sinh viên nào',
+    emptyHint: 'Bấm “Thêm sinh viên” để tạo hồ sơ đầu tiên.',
+  },
+  detail: {
+    studentId: 'MSSV',
+    email: 'Email',
+    close: 'Đóng',
+  },
+  form: {
+    addTitle: 'Thêm sinh viên',
+    editTitle: 'Sửa sinh viên',
+    back: 'Quay lại',
+    fullName: 'Họ tên',
+    fullNamePlaceholder: 'Nhập họ tên',
+    studentId: 'MSSV',
+    studentIdPlaceholder: 'Nhập mã số sinh viên',
+    email: 'Email',
+    emailPlaceholder: 'Nhập email',
+    avatar: 'Ảnh đại diện',
+    avatarPlaceholder: 'Dán link ảnh (https://…)',
+    or: 'hoặc',
+    pickImage: 'Chọn ảnh từ thiết bị',
+    save: 'Lưu',
+  },
+  confirm: {
+    edit: 'Bạn có muốn sửa thông tin SV không?',
+    delete: 'Bạn có muốn xóa thông tin SV không?',
+    yes: 'Có',
+    no: 'Không',
+  },
+  errors: {
+    fullNameRequired: 'Vui lòng nhập họ tên.',
+    fullNameInvalid: 'Họ tên chỉ được chứa chữ cái và dấu cách.',
+    studentIdRequired: 'Vui lòng nhập MSSV.',
+    studentIdLength: 'MSSV phải gồm 9 ký tự, ví dụ BIT240002 (bạn đã nhập %{count}).',
+    studentIdPrefix: 'MSSV: 3 ký tự đầu phải là chữ B hoa + 2 chữ cái a-z (ví dụ BIT, Bit).',
+    studentIdYear: 'MSSV: ký tự thứ 4-5 phải là số từ 22 đến 26.',
+    studentIdDigits: 'MSSV: 4 ký tự cuối phải là chữ số 0-9.',
+    emailRequired: 'Vui lòng nhập email.',
+    emailInvalid: 'Email không hợp lệ. Đúng dạng MSSV@st.cmcu.edu.vn, ví dụ BIT240002@st.cmcu.edu.vn.',
+    emailDomain: 'Email phải có đuôi @st.cmcu.edu.vn.',
+    emailStudentId: 'Phần trước @ phải là MSSV đúng định dạng, ví dụ BIT240002.',
+    emailMismatch: 'Email phải trùng với MSSV: %{email}.',
+  },
+};

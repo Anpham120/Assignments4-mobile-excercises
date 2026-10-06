@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Quản lý SV"
+  },
+  "android": {
+    "app_name": "Quản lý SV"
+  }
+}

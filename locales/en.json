@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Student Manager"
+  },
+  "android": {
+    "app_name": "Student Manager"
+  }
+}

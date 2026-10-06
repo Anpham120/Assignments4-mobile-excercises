@@ -1,0 +1,55 @@
+import type { ValidationErrorKey } from '@/utils/validation';
+
+// Bản dịch tiếng Anh. Bản tiếng Việt (vi.ts) phải có đúng các khóa này.
+export const en = {
+  appName: 'Student Manager',
+  list: {
+    count: { one: '%{count} student', other: '%{count} students' },
+    add: 'Add student',
+    edit: 'Edit %{name}',
+    delete: 'Delete %{name}',
+    emptyTitle: 'No students yet',
+    emptyHint: 'Tap “Add student” to create the first record.',
+  },
+  detail: {
+    studentId: 'Student ID',
+    email: 'Email',
+    close: 'Close',
+  },
+  form: {
+    addTitle: 'Add student',
+    editTitle: 'Edit student',
+    back: 'Back',
+    fullName: 'Full name',
+    fullNamePlaceholder: 'Enter full name',
+    studentId: 'Student ID',
+    studentIdPlaceholder: 'Enter student ID',
+    email: 'Email',
+    emailPlaceholder: 'Enter email',
+    avatar: 'Avatar',
+    avatarPlaceholder: 'Paste image link (https://…)',
+    or: 'or',
+    pickImage: 'Choose from device',
+    save: 'Save',
+  },
+  confirm: {
+    edit: 'Do you want to edit this student’s information?',
+    delete: 'Do you want to delete this student’s information?',
+    yes: 'Yes',
+    no: 'No',
+  },
+  errors: {
+    fullNameRequired: 'Please enter the full name.',
+    fullNameInvalid: 'Full name can only contain letters and spaces.',
+    studentIdRequired: 'Please enter the student ID.',
+    studentIdLength: 'Student ID must have 9 characters, e.g. BIT240002 (you entered %{count}).',
+    studentIdPrefix: 'Student ID: the first 3 characters must be an uppercase "B" + 2 letters a-z (e.g. BIT, Bit).',
+    studentIdYear: 'Student ID: characters 4-5 must be a number from 22 to 26.',
+    studentIdDigits: 'Student ID: the last 4 characters must be digits 0-9.',
+    emailRequired: 'Please enter the email.',
+    emailInvalid: 'Invalid email. Use the format StudentID@st.cmcu.edu.vn, e.g. BIT240002@st.cmcu.edu.vn.',
+    emailDomain: 'Email must end with @st.cmcu.edu.vn.',
+    emailStudentId: 'The part before @ must be a valid student ID, e.g. BIT240002.',
+    emailMismatch: 'Email must match the student ID: %{email}.',
+  } satisfies Record<ValidationErrorKey, string>,
+};
